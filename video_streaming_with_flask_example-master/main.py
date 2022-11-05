@@ -19,4 +19,4 @@ def video_feed():
     return Response(gen(VideoCamera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-    app.run()
+app.run(host = '0.0.0.0', port=5000)
